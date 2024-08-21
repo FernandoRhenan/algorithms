@@ -32,7 +32,11 @@ int partition(int *array, int start, int end)
     temp = array[i + 1];
     array[i + 1] = array[end];
     array[end] = temp;
-
+    for (int i = 0; i < 11; i++)
+    {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
     return i + 1;
 }
 
